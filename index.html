@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="utf-8"/>
+    <title>Survey Form</title>
+  </head>
+  <body>
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking part in this survey</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your Name: <input type="text" id="name" placeholder="John" required/></label>
+        <label for="email" id="email-label">Enter Your Email: <input type="email" id="email" placeholder="John@email.com" required/></label>
+        <label for="number" id="number-label">Enter Your Age: <input type="number" id="number" min=13 max=120 placeholder="21"/>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">How satisfied with the service are you? 
+          <select id="dropdown">
+            <option disabled value="">Please select one.</option>
+            <option value="great">Very satisfied</option>
+            <option value="good">Satisfied</option>
+            <option value="ok">Neutral</option>
+            <option value="bad">Unsatisfied</option>
+            <option value="horrible">Very unsatisfied</option>
+          </select>
+        </label>
+
+        <p class="question">Will you continue using your services?</p>
+        <label><input type="radio" name="yes-no" class="inline" value="yes"/> Yes</label>
+        <label><input type="radio" name="yes-no" class="inline" value="no"/> No</label>
+
+        <label for="comment">Aditional comments: <textarea id="comment" placeholder="Please tell us what you think." rows="4" cols="30"></textarea></label>
+      </fieldset>
+      <fieldset>
+        <label><input type="checkbox" class="inline" value="send-email"/> Do you want to receive news emails?</label>
+        <label><input type="checkbox" class="inline" value="service-agree"/> Do you agree with the terms and conditions?</label>
+      </fieldset>
+      <input type="submit" id="submit"/>
+    </form>
+
+  </body>
+  </html>
